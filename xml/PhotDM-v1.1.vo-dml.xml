@@ -334,6 +334,9 @@ NB this description applies to the inherited access atttribute on TransmissionCu
       <vodml-id>MagnitudeSystem.referenceSpectrum</vodml-id>
       <name>referenceSpectrum</name>
       <description>TODO : Missing description : please, update your UML model asap.</description>
+      <datatype>
+        <vodml-ref>ivoa:string</vodml-ref>
+      </datatype>
       <multiplicity>
         <minOccurs>0</minOccurs>
         <maxOccurs>1</maxOccurs>
@@ -518,6 +521,9 @@ configuration</description>
       <vodml-id>PhotometryFilter.DataValidityFrom</vodml-id>
       <name>DataValidityFrom</name>
       <description>TODO : Missing description : please, update your UML model asap.</description>
+      <datatype>
+        <vodml-ref>ivoa:datetime</vodml-ref>
+      </datatype>
       <multiplicity>
         <minOccurs>1</minOccurs>
         <maxOccurs>1</maxOccurs>
@@ -527,6 +533,9 @@ configuration</description>
       <vodml-id>PhotometryFilter.DataValidityTo</vodml-id>
       <name>DataValidityTo</name>
       <description>TODO : Missing description : please, update your UML model asap.</description>
+      <datatype>
+        <vodml-ref>ivoa:datetime</vodml-ref>
+      </datatype>
       <multiplicity>
         <minOccurs>1</minOccurs>
         <maxOccurs>1</maxOccurs>
@@ -593,6 +602,10 @@ configuration</description>
       <vodml-id>SpectralAxis.CoordSys</vodml-id>
       <name>CoordSys</name>
       <description>TODO : Missing description : please, update your UML model asap.</description>
+            <datatype>
+        <vodml-ref>ivoa:string</vodml-ref>
+      </datatype>
+      
       <multiplicity>
         <minOccurs>1</minOccurs>
         <maxOccurs>1</maxOccurs>
@@ -632,6 +645,10 @@ configuration</description>
       <vodml-id>TransmissionCurve.transmissionCurveSpectrum</vodml-id>
       <name>transmissionCurveSpectrum</name>
       <description>TODO : Missing description : please, update your UML model asap.</description>
+      <datatype>
+        <vodml-ref>ivoa:string</vodml-ref>
+      </datatype>
+      
       <multiplicity>
         <minOccurs>0</minOccurs>
         <maxOccurs>1</maxOccurs>

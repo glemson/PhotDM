@@ -103,6 +103,16 @@
           <td>
             &nbsp;&nbsp;&nbsp;&nbsp;<a href="#vodml-ids">vodml-id-s</a></td>
         </tr>
+        <tr>
+          <td>4.</td>
+          <td>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="#modelimports">Imported Models</a></td>
+        </tr>
+        <tr>
+          <td>4.1</td>
+          <td>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="#ivoa">ivoa</a></td>
+        </tr>
       </table>
     </div>
     <hr>
@@ -116,7 +126,7 @@
       <tr>
         <td align="right"><b>Date</b></td>
         <td> : </td>
-        <td>2020-06-08T09:43:59</td>
+        <td>2020-06-08T10:01:35</td>
       </tr>
       <tr>
         <td align="right"><b>Version</b></td>
@@ -128,7 +138,40 @@
         <td valign="top"> : </td>
         <td>This is the data model for Photometric Calibration ... </td>
       </tr>
-    </table>
+      <tr>
+        <td align="right" valign="top"><b>Diagram</b></td>
+        <td valign="top"> : </td>
+        <td>The following diagram has been generated from the model using the <a href="http://www.graphviz.org/" target="_blank">GraphViz</a> tool.<br>
+          The classes and packages in the diagram can be clicked and are mapped to the descriptions of the corresponding element elsewhere
+          in the document. 
+          
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3"></td>
+      </tr>
+    </table><img src="PhotDM-v1.1.png" usemap="#GVmap"><map id="GVmap" name="GVmap">
+<area shape="rect" id="node1" href="#PhysicalQuantity" title="{&lt;&lt;datatype&gt;&gt;\nPhysicalQuantity|+unit : PhotDM:Unit\l+UCD : ivoa:string\l}" alt="" coords="87,175,207,245"/>
+<area shape="rect" id="node2" href="#PhysicalQuantityDouble" title="{&lt;&lt;datatype&gt;&gt;\nPhysicalQuantityDouble|+value : ivoa:real\l+error : ivoa:real\l}" alt="" coords="5,11,140,82"/>
+<area shape="rect" id="node3" href="#PhysicalQuantityInt" title="{&lt;&lt;datatype&gt;&gt;\nPhysicalQuantityInt|+value : ivoa:integer\l+error : ivoa:integer\l}" alt="" coords="164,11,280,82"/>
+<area shape="rect" id="node4" href="#S_Bounds" title="{&lt;&lt;datatype&gt;&gt;\nS_Bounds|+extent : ivoa:real\l+start : ivoa:real\l+stop : ivoa:real\l}" alt="" coords="305,5,411,88"/>
+<area shape="rect" id="node5" href="#S_Coverage" title="{&lt;&lt;datatype&gt;&gt;\nS_Coverage|+location : PhotDM:S_Location\l+bounds : PhotDM:S_Bounds\l}" alt="" coords="436,11,608,82"/>
+<area shape="rect" id="node6" href="#S_Location" title="{&lt;&lt;datatype&gt;&gt;\nS_Location|+value : ivoa:integer\l}" alt="" coords="632,17,748,76"/>
+<area shape="rect" id="node7" href="#Unit" title="{&lt;&lt;datatype&gt;&gt;\nUnit|+expression : ivoa:string\l+scaleSI : ivoa:real\l+dimEquation : ivoa:string\l}" alt="" coords="773,5,917,88"/>
+<area shape="rect" id="node8" href="#Access" title="{Access|+Reference : ivoa:anyURI\l+Format : ivoa:string\l+Size : ivoa:real\l}" alt="" coords="753,477,896,548"/>
+<area shape="rect" id="node9" href="#AsinhZeroPoint" title="{AsinhZeroPoint|+softeningCoefficient : ivoa:real\l}" alt="" coords="1325,22,1497,71"/>
+<area shape="rect" id="node19" href="#ZeroPoint" title="{ZeroPoint|+ZeroPointFlux : PhotDM:PhysicalQuantityDouble\l+referenceMagnitude : PhotDM:PhysicalQuantityDouble\l+type : ivoa:real\l}" alt="" coords="1373,175,1657,245"/>
+<area shape="rect" id="node10" href="#LinearFlux" title="{LinearFlux}" alt="" coords="1522,22,1594,71"/>
+<area shape="rect" id="node11" href="#MagnitudeSystem" title="{MagnitudeSystem|+type : ivoa:string\l+referenceSpectrum : ivoa:string\l}" alt="" coords="1133,181,1305,239"/>
+<area shape="rect" id="node16" href="#Source" title="{Source}" alt="" coords="1183,349,1255,398"/>
+<area shape="rect" id="node12" href="#PhotCal" title="{PhotCal|+uniqueIdentifier : ivoa:string\l}" alt="" coords="1139,22,1297,71"/>
+<area shape="rect" id="node14" href="#PhotometryFilter" title="{PhotometryFilter|+fpsIdentifier : ivoa:string\l+identifier : ivoa:string\l+name : ivoa:string\l+description : ivoa:string\l+bandName : ivoa:string\l+DataValidityFrom : ivoa:datetime\l+DataValidityTo : ivoa:datetime\l}" alt="" coords="927,151,1109,269"/>
+<area shape="rect" id="node13" href="#PhotometricSystem" title="{PhotometricSystem|+description : ivoa:string\l+detectorType : ivoa:integer\l}" alt="" coords="941,17,1095,76"/>
+<area shape="rect" id="node17" href="#SpectralAxis" title="{SpectralAxis|+Unit : PhotDM:Unit\l+CoordSys : ivoa:string\l+UCD : ivoa:string\l+coverage : PhotDM:S_Coverage\l}" alt="" coords="957,332,1133,415"/>
+<area shape="rect" id="node18" href="#TransmissionCurve" title="{TransmissionCurve|+transmissionCurveSpectrum : ivoa:string\l}" alt="" coords="717,349,932,398"/>
+<area shape="rect" id="node15" href="#PogsonZeroPoint" title="{PogsonZeroPoint}" alt="" coords="1618,22,1722,71"/>
+</map>
+
     <hr>
     <h1>2.<a name="packages">Model contents: Packages and Types</a></h1>
     <p>
@@ -184,7 +227,7 @@
                     <tr>
                       <td class="feature-detail" valign="top" rowspan="4"><a name="Access.Reference"></a><b>Reference</b></td>
                       <td class="feature-heading">type</td>
-                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="#anyURI">anyURI</a></td>
+                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="https://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/ivoa/vo-dml/IVOA-v1.0.html#anyURI">anyURI</a></td>
                     </tr>
                     <tr>
                       <td class="feature-heading">vodml-id</td>
@@ -203,7 +246,7 @@
                     <tr>
                       <td class="feature-detail" valign="top" rowspan="4"><a name="Access.Format"></a><b>Format</b></td>
                       <td class="feature-heading">type</td>
-                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="#string">string</a></td>
+                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="https://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/ivoa/vo-dml/IVOA-v1.0.html#string">string</a></td>
                     </tr>
                     <tr>
                       <td class="feature-heading">vodml-id</td>
@@ -220,7 +263,7 @@
                     <tr>
                       <td class="feature-detail" valign="top" rowspan="4"><a name="Access.Size"></a><b>Size</b></td>
                       <td class="feature-heading">type</td>
-                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="#real">real</a></td>
+                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="https://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/ivoa/vo-dml/IVOA-v1.0.html#real">real</a></td>
                     </tr>
                     <tr>
                       <td class="feature-heading">vodml-id</td>
@@ -274,7 +317,7 @@
                     <tr>
                       <td class="feature-detail" valign="top" rowspan="4"><a name="AsinhZeroPoint.softeningCoefficient"></a><b>softeningCoefficient</b></td>
                       <td class="feature-heading">type</td>
-                      <td class="feature-detail"></td>
+                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="https://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/ivoa/vo-dml/IVOA-v1.0.html#real">real</a></td>
                     </tr>
                     <tr>
                       <td class="feature-heading">vodml-id</td>
@@ -353,7 +396,7 @@
                     <tr>
                       <td class="feature-detail" valign="top" rowspan="4"><a name="MagnitudeSystem.type"></a><b>type</b></td>
                       <td class="feature-heading">type</td>
-                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="#string">string</a></td>
+                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="https://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/ivoa/vo-dml/IVOA-v1.0.html#string">string</a></td>
                     </tr>
                     <tr>
                       <td class="feature-heading">vodml-id</td>
@@ -370,7 +413,7 @@
                     <tr>
                       <td class="feature-detail" valign="top" rowspan="4"><a name="MagnitudeSystem.referenceSpectrum"></a><b>referenceSpectrum</b></td>
                       <td class="feature-heading">type</td>
-                      <td class="feature-detail"></td>
+                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="https://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/ivoa/vo-dml/IVOA-v1.0.html#string">string</a></td>
                     </tr>
                     <tr>
                       <td class="feature-heading">vodml-id</td>
@@ -449,7 +492,7 @@
                     <tr>
                       <td class="feature-detail" valign="top" rowspan="4"><a name="PhotCal.uniqueIdentifier"></a><b>uniqueIdentifier</b></td>
                       <td class="feature-heading">type</td>
-                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="#string">string</a></td>
+                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="https://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/ivoa/vo-dml/IVOA-v1.0.html#string">string</a></td>
                     </tr>
                     <tr>
                       <td class="feature-heading">vodml-id</td>
@@ -574,7 +617,7 @@
                     <tr>
                       <td class="feature-detail" valign="top" rowspan="4"><a name="PhotometricSystem.description"></a><b>description</b></td>
                       <td class="feature-heading">type</td>
-                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="#string">string</a></td>
+                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="https://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/ivoa/vo-dml/IVOA-v1.0.html#string">string</a></td>
                     </tr>
                     <tr>
                       <td class="feature-heading">vodml-id</td>
@@ -591,7 +634,7 @@
                     <tr>
                       <td class="feature-detail" valign="top" rowspan="4"><a name="PhotometricSystem.detectorType"></a><b>detectorType</b></td>
                       <td class="feature-heading">type</td>
-                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="#integer">integer</a></td>
+                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="https://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/ivoa/vo-dml/IVOA-v1.0.html#integer">integer</a></td>
                     </tr>
                     <tr>
                       <td class="feature-heading">vodml-id</td>
@@ -675,7 +718,7 @@
                     <tr>
                       <td class="feature-detail" valign="top" rowspan="4"><a name="PhotometryFilter.fpsIdentifier"></a><b>fpsIdentifier</b></td>
                       <td class="feature-heading">type</td>
-                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="#string">string</a></td>
+                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="https://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/ivoa/vo-dml/IVOA-v1.0.html#string">string</a></td>
                     </tr>
                     <tr>
                       <td class="feature-heading">vodml-id</td>
@@ -692,7 +735,7 @@
                     <tr>
                       <td class="feature-detail" valign="top" rowspan="4"><a name="PhotometryFilter.identifier"></a><b>identifier</b></td>
                       <td class="feature-heading">type</td>
-                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="#string">string</a></td>
+                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="https://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/ivoa/vo-dml/IVOA-v1.0.html#string">string</a></td>
                     </tr>
                     <tr>
                       <td class="feature-heading">vodml-id</td>
@@ -709,7 +752,7 @@
                     <tr>
                       <td class="feature-detail" valign="top" rowspan="4"><a name="PhotometryFilter.name"></a><b>name</b></td>
                       <td class="feature-heading">type</td>
-                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="#string">string</a></td>
+                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="https://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/ivoa/vo-dml/IVOA-v1.0.html#string">string</a></td>
                     </tr>
                     <tr>
                       <td class="feature-heading">vodml-id</td>
@@ -728,7 +771,7 @@
                     <tr>
                       <td class="feature-detail" valign="top" rowspan="4"><a name="PhotometryFilter.description"></a><b>description</b></td>
                       <td class="feature-heading">type</td>
-                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="#string">string</a></td>
+                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="https://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/ivoa/vo-dml/IVOA-v1.0.html#string">string</a></td>
                     </tr>
                     <tr>
                       <td class="feature-heading">vodml-id</td>
@@ -745,7 +788,7 @@
                     <tr>
                       <td class="feature-detail" valign="top" rowspan="4"><a name="PhotometryFilter.bandName"></a><b>bandName</b></td>
                       <td class="feature-heading">type</td>
-                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="#string">string</a></td>
+                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="https://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/ivoa/vo-dml/IVOA-v1.0.html#string">string</a></td>
                     </tr>
                     <tr>
                       <td class="feature-heading">vodml-id</td>
@@ -762,7 +805,7 @@
                     <tr>
                       <td class="feature-detail" valign="top" rowspan="4"><a name="PhotometryFilter.DataValidityFrom"></a><b>DataValidityFrom</b></td>
                       <td class="feature-heading">type</td>
-                      <td class="feature-detail"></td>
+                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="https://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/ivoa/vo-dml/IVOA-v1.0.html#datetime">datetime</a></td>
                     </tr>
                     <tr>
                       <td class="feature-heading">vodml-id</td>
@@ -779,7 +822,7 @@
                     <tr>
                       <td class="feature-detail" valign="top" rowspan="4"><a name="PhotometryFilter.DataValidityTo"></a><b>DataValidityTo</b></td>
                       <td class="feature-heading">type</td>
-                      <td class="feature-detail"></td>
+                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="https://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/ivoa/vo-dml/IVOA-v1.0.html#datetime">datetime</a></td>
                     </tr>
                     <tr>
                       <td class="feature-heading">vodml-id</td>
@@ -901,7 +944,7 @@
                     <tr>
                       <td class="feature-detail" valign="top" rowspan="4"><a name="PhysicalQuantity.UCD"></a><b>UCD</b></td>
                       <td class="feature-heading">type</td>
-                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="#string">string</a></td>
+                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="https://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/ivoa/vo-dml/IVOA-v1.0.html#string">string</a></td>
                     </tr>
                     <tr>
                       <td class="feature-heading">vodml-id</td>
@@ -955,7 +998,7 @@
                     <tr>
                       <td class="feature-detail" valign="top" rowspan="4"><a name="PhysicalQuantityDouble.value"></a><b>value</b></td>
                       <td class="feature-heading">type</td>
-                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="#real">real</a></td>
+                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="https://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/ivoa/vo-dml/IVOA-v1.0.html#real">real</a></td>
                     </tr>
                     <tr>
                       <td class="feature-heading">vodml-id</td>
@@ -972,7 +1015,7 @@
                     <tr>
                       <td class="feature-detail" valign="top" rowspan="4"><a name="PhysicalQuantityDouble.error"></a><b>error</b></td>
                       <td class="feature-heading">type</td>
-                      <td class="feature-detail"></td>
+                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="https://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/ivoa/vo-dml/IVOA-v1.0.html#real">real</a></td>
                     </tr>
                     <tr>
                       <td class="feature-heading">vodml-id</td>
@@ -1026,7 +1069,7 @@
                     <tr>
                       <td class="feature-detail" valign="top" rowspan="4"><a name="PhysicalQuantityInt.value"></a><b>value</b></td>
                       <td class="feature-heading">type</td>
-                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="#integer">integer</a></td>
+                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="https://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/ivoa/vo-dml/IVOA-v1.0.html#integer">integer</a></td>
                     </tr>
                     <tr>
                       <td class="feature-heading">vodml-id</td>
@@ -1043,7 +1086,7 @@
                     <tr>
                       <td class="feature-detail" valign="top" rowspan="4"><a name="PhysicalQuantityInt.error"></a><b>error</b></td>
                       <td class="feature-heading">type</td>
-                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="#integer">integer</a></td>
+                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="https://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/ivoa/vo-dml/IVOA-v1.0.html#integer">integer</a></td>
                     </tr>
                     <tr>
                       <td class="feature-heading">vodml-id</td>
@@ -1122,7 +1165,7 @@
                     <tr>
                       <td class="feature-detail" valign="top" rowspan="4"><a name="S_Bounds.extent"></a><b>extent</b></td>
                       <td class="feature-heading">type</td>
-                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="#real">real</a></td>
+                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="https://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/ivoa/vo-dml/IVOA-v1.0.html#real">real</a></td>
                     </tr>
                     <tr>
                       <td class="feature-heading">vodml-id</td>
@@ -1139,7 +1182,7 @@
                     <tr>
                       <td class="feature-detail" valign="top" rowspan="4"><a name="S_Bounds.start"></a><b>start</b></td>
                       <td class="feature-heading">type</td>
-                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="#real">real</a></td>
+                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="https://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/ivoa/vo-dml/IVOA-v1.0.html#real">real</a></td>
                     </tr>
                     <tr>
                       <td class="feature-heading">vodml-id</td>
@@ -1156,7 +1199,7 @@
                     <tr>
                       <td class="feature-detail" valign="top" rowspan="4"><a name="S_Bounds.stop"></a><b>stop</b></td>
                       <td class="feature-heading">type</td>
-                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="#real">real</a></td>
+                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="https://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/ivoa/vo-dml/IVOA-v1.0.html#real">real</a></td>
                     </tr>
                     <tr>
                       <td class="feature-heading">vodml-id</td>
@@ -1273,7 +1316,7 @@
                     <tr>
                       <td class="feature-detail" valign="top" rowspan="4"><a name="S_Location.value"></a><b>value</b></td>
                       <td class="feature-heading">type</td>
-                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="#integer">integer</a></td>
+                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="https://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/ivoa/vo-dml/IVOA-v1.0.html#integer">integer</a></td>
                     </tr>
                     <tr>
                       <td class="feature-heading">vodml-id</td>
@@ -1364,7 +1407,7 @@
                     <tr>
                       <td class="feature-detail" valign="top" rowspan="4"><a name="SpectralAxis.CoordSys"></a><b>CoordSys</b></td>
                       <td class="feature-heading">type</td>
-                      <td class="feature-detail"></td>
+                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="https://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/ivoa/vo-dml/IVOA-v1.0.html#string">string</a></td>
                     </tr>
                     <tr>
                       <td class="feature-heading">vodml-id</td>
@@ -1381,7 +1424,7 @@
                     <tr>
                       <td class="feature-detail" valign="top" rowspan="4"><a name="SpectralAxis.UCD"></a><b>UCD</b></td>
                       <td class="feature-heading">type</td>
-                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="#string">string</a></td>
+                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="https://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/ivoa/vo-dml/IVOA-v1.0.html#string">string</a></td>
                     </tr>
                     <tr>
                       <td class="feature-heading">vodml-id</td>
@@ -1448,7 +1491,7 @@
                     <tr>
                       <td class="feature-detail" valign="top" rowspan="4"><a name="TransmissionCurve.transmissionCurveSpectrum"></a><b>transmissionCurveSpectrum</b></td>
                       <td class="feature-heading">type</td>
-                      <td class="feature-detail"></td>
+                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="https://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/ivoa/vo-dml/IVOA-v1.0.html#string">string</a></td>
                     </tr>
                     <tr>
                       <td class="feature-heading">vodml-id</td>
@@ -1527,7 +1570,7 @@
                     <tr>
                       <td class="feature-detail" valign="top" rowspan="4"><a name="Unit.expression"></a><b>expression</b></td>
                       <td class="feature-heading">type</td>
-                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="#string">string</a></td>
+                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="https://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/ivoa/vo-dml/IVOA-v1.0.html#string">string</a></td>
                     </tr>
                     <tr>
                       <td class="feature-heading">vodml-id</td>
@@ -1544,7 +1587,7 @@
                     <tr>
                       <td class="feature-detail" valign="top" rowspan="4"><a name="Unit.scaleSI"></a><b>scaleSI</b></td>
                       <td class="feature-heading">type</td>
-                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="#real">real</a></td>
+                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="https://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/ivoa/vo-dml/IVOA-v1.0.html#real">real</a></td>
                     </tr>
                     <tr>
                       <td class="feature-heading">vodml-id</td>
@@ -1561,7 +1604,7 @@
                     <tr>
                       <td class="feature-detail" valign="top" rowspan="4"><a name="Unit.dimEquation"></a><b>dimEquation</b></td>
                       <td class="feature-heading">type</td>
-                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="#string">string</a></td>
+                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="https://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/ivoa/vo-dml/IVOA-v1.0.html#string">string</a></td>
                     </tr>
                     <tr>
                       <td class="feature-heading">vodml-id</td>
@@ -1654,7 +1697,7 @@
                     <tr>
                       <td class="feature-detail" valign="top" rowspan="4"><a name="ZeroPoint.type"></a><b>type</b></td>
                       <td class="feature-heading">type</td>
-                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="#real">real</a></td>
+                      <td class="feature-detail"><a href="#ivoa">ivoa</a>:<a href="https://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/ivoa/vo-dml/IVOA-v1.0.html#real">real</a></td>
                     </tr>
                     <tr>
                       <td class="feature-heading">vodml-id</td>
@@ -2026,6 +2069,28 @@
         <td class="feature-detail"><a href="#ZeroPoint.type">ZeroPoint.type</a></td>
         <td class="feature-detail">attribute</td>
         <td class="feature-detail">TODO : Missing description : please, update your UML model asap.</td>
+      </tr>
+    </table>
+    <hr>
+    <h1>4.<a name="modelimports">Imported Models</a></h1>
+    <p>This section lists the external models imported by the current data model.
+      For each imported model we list URLs to the VO-DML and HTML representations and the prefix used for vodml-ids from inside
+      the model.
+    </p>
+    <h2><a name="ivoa"></a>4.1 ivoa
+    </h2>
+    <table border="1" cellspacing="2" width="100%">
+      <tr>
+        <td class="objecttype-title" width="20%">Model vodml-id</td>
+        <td class="objecttype-name">ivoa</td>
+      </tr>
+      <tr>
+        <td width="30%" class="info-title">url</td>
+        <td><a href="http://www.ivoa.net/xml/VODML/20180519/IVOA-v1.0.vo-dml.xml">http://www.ivoa.net/xml/VODML/20180519/IVOA-v1.0.vo-dml.xml</a></td>
+      </tr>
+      <tr>
+        <td width="30%" class="info-title">documentation url</td>
+        <td><a href="https://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/ivoa/vo-dml/IVOA-v1.0.html">https://volute.g-vo.org/svn/trunk/projects/dm/vo-dml/models/ivoa/vo-dml/IVOA-v1.0.html</a></td>
       </tr>
     </table>
   </body>
